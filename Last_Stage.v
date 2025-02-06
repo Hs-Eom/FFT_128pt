@@ -14,25 +14,6 @@ module Last_Stage#(
 	output wire [BW:0] outreal,
 	output wire [BW:0] outimag
 );
-//ILA
-// ila_0 inst_ila(
-//     .clk    (clk),
-//     .probe0 (r_Real),
-//     .probe1 (r_Imag),
-//     .probe2 (Sr_out[0]),
-//     .probe3 (Sr_out[1]),
-//     .probe4 (bf_P[0]),
-//     .probe5 (bf_P[1]),
-//     .probe6 (bf_M[0]),
-//     .probe7 (bf_M[1]),
-//     .probe8 (mux0[0]),
-//     .probe9 (mux0[1]),
-//     .probe10 (mux1[0]),
-//     .probe11 (mux1[1]),
-//     .probe12 (bf_en),
-//     .probe13 (outreal),
-//     .probe14 (outimag)
-// );
 
 //declare wire [0]:Real, [1]:Imag
 reg [BW-1:0] r_Real;
