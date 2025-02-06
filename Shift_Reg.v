@@ -10,19 +10,6 @@ module Shift_Reg
 	input wire 				valid,
 	output wire [BW:0]	Out_Data
 );
-//ila
-// ila_2
-// Sr_ILA(
-//     .clk    (clk),
-//     .probe0 (valid),
-//     .probe1 (In_Data),
-//     .probe2 (Out_Data),
-//     .probe3 (sr[0]),
-//     .probe4 (sr[1]),
-//     .probe5 (sr[2]),
-//     .probe6 (sr[62]),
-//     .probe7 (sr[63])
-// );
 
 
 //Shift Register declare
