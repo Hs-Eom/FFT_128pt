@@ -15,7 +15,7 @@ module axi_slave_FFT_f_ps#(
      input  wire [7:0]           S_AXI_AWLEN,
      input  wire                 S_AXI_AWLOCK,
      input  wire [2:0]           S_AXI_AWSIZE,
-     input  wire [1:0]           S_AXI_AWBURST,		// Info: Burst size selectio is not supported
+     input  wire [1:0]           S_AXI_AWBURST,		
      input  wire                 S_AXI_AWVALID,
      output wire                 S_AXI_AWREADY,
 
@@ -36,7 +36,7 @@ module axi_slave_FFT_f_ps#(
      input  wire [7:0]           S_AXI_ARLEN,
      input  wire                 S_AXI_ARLOCK,
      input  wire [2:0]           S_AXI_ARSIZE,
-     input  wire [1:0]           S_AXI_ARBURST,		// Info: Burst size selectio is not supported
+     input  wire [1:0]           S_AXI_ARBURST,		
      input  wire                 S_AXI_ARVALID,
      output wire                 S_AXI_ARREADY,
 
@@ -131,8 +131,6 @@ assign S_AXI_BRESP = 2'b00;
 assign R_wr_vld = S_AXI_ARVALID && S_AXI_ARREADY;
 
 ////////////  R Description ///////////////
-
-// Info: "Out of order" is not supported
 
 assign S_AXI_RVALID = R_rd_vld ;	// for single beat burst
 assign S_AXI_RLAST  = R_rd_vld;
