@@ -122,7 +122,7 @@ void DMA_transfer(int in_addr, int out_addr, int len){
 
     //DMA0의 DDR->PL(Mm2S)--------------------------------------------------------------------------------------
     //1. DDR Src주소 가져오기
-    XAxiDma_WriteReg(&DMA0.TxBdRing.ChanBase,XAXIDMA_SRCADDR_OFFSET,OUTPUT_BASE);
+    XAxiDma_WriteReg(&DMA0.TxBdRing.ChanBase,XAXIDMA_SRCADDR_OFFSET,out_addr);
 
     //2 DMA Ctrl[0] run/stop Set
     XAxiDma_WriteReg(&DMA0.TxBdRing.ChanBase,XAXIDMA_CR_OFFSET,
