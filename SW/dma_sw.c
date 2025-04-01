@@ -92,7 +92,7 @@ int main(){
 }
 
 void DMA_Setup(){
-    XAxiDma* cfg;
+    XAxiDma_config* cfg;
     cfg = XAxiDma_LookupConfig(XPAR_AXI_DMA_0_DEVICE_ID);
     XAxiDma_CfgInitialize(&DMA0,cfg);
 
